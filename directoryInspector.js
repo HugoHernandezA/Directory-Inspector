@@ -2,7 +2,8 @@ const setDir = require('./helperDir');
 const path = require('path');
 const fs = require('fs');
 
-const directory = setDir.setDir('./content');
+//const directory2 = setDir.setDir('./content');
+const directory = setDir.setDir(process.argv[2]);
 
 fs.readdir(directory, (err, files) => {
     try{
